@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>Nepali Date Picker</title>
+
+    <!-- css for date-picker -->
+    <link rel="stylesheet" href="nepali-date-picker.css">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+
+
+<body>
+
+<div class="col-sm-4">
+    <h1 class="form-group" style="text-align: center;">Nepali Date Picker</h1>
+    <form action="POST">
+        <h2>Pick Your Date</h2>
+        <input type="text" class="date-picker form-control" data-single="true" value="2077-01-20" placeholder="Click here to select date">
+        <button class="btn btn-success">Submit</button>
+    </form>
+</div> 
+
+<!-- javascript for date-picker -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="nepali-date-picker.js"></script>
+<script>
+        jQuery(document).ready(function(){
+            $('.date-picker').nepaliDatePicker();
+        })
+</script>
+
+
+</body>
+
+</html>
